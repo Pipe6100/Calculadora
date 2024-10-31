@@ -1,0 +1,42 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 300px;
+}
+
+input[type="Button"] {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="Button"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"] {
+    grid-column: span 4;
+    padding: 20px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#EsIgual {
+    grid-column: span 4;
+    padding: 30px;
+    font-size: 28px;
+}
